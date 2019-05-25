@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Form</h2>
+        <td>
+                <hr>
+    
+                <p class="intro">HTML Formları kullanıcının klavye ile girdiği 
+                bilgileri işlemek için kullanılır.</p>
+                
+    
+                <h2>Formlar</h2>
+                <p>Bir form, form elemanlarını içinde bulunduran alandır.</p>
+                <p>Form elemanları kullanıcıların bilgi girmesini sağlayan 
+                elemanlardır. (metin alanları, açılabilir listeler, seçenek 
+                kutuları, kontrol kutuları)</p>
+                <p>Kullanım biçimi:</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;form&gt;
+      &lt;input&gt;
+      &lt;input&gt;
+    &lt;/form&gt;</pre></td></tr></tbody></table><br>
+                <hr>
+    <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- iframe -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7080431382426535" data-ad-slot="6356193643" data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>  <hr>
+                <h2>Giriş (Input)</h2>
+                <p>En çok kullanılan form etiketi &lt;input&gt; etiketidir.</p>
+                <h3>Metin Alanları</h3>
+                <p>Kullanıcının rakam veya harf girmesini istediğiniz yerlerde bunu 
+                kullabilirsiniz.</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;form&gt;
+    Adınız: 
+    &lt;input type="text" name="isim"&gt;
+    &lt;br&gt;
+    Soyadınız: 
+    &lt;input type="text" name="soyad"&gt;
+    &lt;/form&gt;</pre></td></tr></tbody></table>
+                <p>Çıktısı:</p>
+                <form action="">Adınız:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="firstname"> <br>
+                    Soyadınız: 
+                <input name="lastname"> </form>
+                <p>Formun kendisinin görünmediğine dikkat ediniz. Ayrıca bir çok 
+                tarayıcının metin giriş alanı için varsayılan olarak 20 karakterlik 
+                alan bıraktığına dikkat ediniz.&nbsp; </p>
+                <h3>Seçenek Butonları (Radio Buttons)</h3>
+                <p>Kullanıcının bir çok seçenek içinden sadece bir tanesini 
+                seçebilmesini istediğiniz zaman bunu kullanırsınız.</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;form&gt;
+    &lt;input type="radio" name="Cinsiyet" value="Erkek"&gt; Erkek
+    &lt;br&gt;
+    &lt;input type="radio" name="Cinsiyet" value="Kadın"&gt; Kadın
+    &lt;/form&gt;</pre></td></tr></tbody></table>
+                <p>Çıktısı:</p>
+                <form action=""><input type="radio" value="male" name="sex"> Erkek 
+                <br><input type="radio" value="female" name="sex"> Kadın</form>
+                <h3>Kontrol kutuları (Checkboxes)</h3>
+                <p>Kullanıcının, sunulan seçenekler içinden istediği kadar seçmesini 
+                sağlamak için bunu kullanabilirsiniz.</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;form&gt;
+    Bir bisikletim var:
+    &lt;input type="checkbox" name="Tasit" value="Bisiklet"&gt;
+    &lt;br&gt;
+    Bir arabam var: 
+    &lt;input type="checkbox" name="Tasit" value="Araba"&gt;
+    &lt;br&gt;
+    Bir uçağım var: 
+    &lt;input type="checkbox" name="Tasit" value="Uçak"&gt;
+    &lt;/form&gt;</pre></td></tr></tbody></table>
+                <p>Çıktısı:</p>
+                <form action="">Bir bisikletim var: <input type="checkbox" value="Bike" name="vehicle"> <br>Bir arabam var: <input type="checkbox" value="Car" name="vehicle"> <br>Bir uçağım var: <input type="checkbox" value="Airplane" name="vehicle"> </form>
+                <hr>
+    
+                <h2>Formlarda "Action" Parametresi ve "Submit" Butonu</h2>
+                <p>Kullanıcı submit (gönder) butonuna tıkladığında girilen bilgiler 
+                başka bir sayfaya gönderilir. Action parametresinde ise bilgilerin 
+                hangi dosyaya gönderileceği belirtilir. Bilgilerin gönderildiği 
+                dosya, genellikle gelen bilgilerle ilgili ne tür işlem yapılacağı 
+                hakkında bilgiler içerir.</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;form name="input" action="ornekler/html_form_action.php"
+    method="get" target="_blank"&gt;
+    Kullanıcı Adı: 
+    &lt;input type="text" name="kullanici"&gt;
+    &lt;input type="submit" value="Gönder"&gt;
+    &lt;/form&gt;</pre></td></tr></tbody></table>
+                <p>Çıktısı:</p>
+                <form name="input" action="ornekler/html_form_action.php" method="get" target="_blank">Kullanıcı Adı: 
+                <input name="kullanici"> <input type="submit" value="Gönder"> </form>
+                <p>Eğer yukarıdaki kutuya birşeyler yazıp butona tıklarsanız, 
+                girdiğiniz bilgileri 
+                "html_form_action.php" dosyasına gönderirsiniz. Yeni pencerede 
+                açılacak olan bu sayfada girmiş olduğunuz bilgileri görebilirsiniz. 
+                </p>
+                <hr>
+    
+                <h2>Form Etiketleri</h2>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <th align="left">Etiket</th>
+                    <th align="left">Açıklama</th></tr>
+                  <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>Form</td></tr>
+                  <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>Giriş alanı</td></tr>
+                  <tr>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Çok satırlı metin giriş alanı</td></tr>
+                  <tr>
+                    <td>&lt;label&gt;</td>
+                    <td>Etiket</td></tr>
+                  <tr>
+                    <td>&lt;fieldset&gt;</td>
+                    <td>Alanların ayarlarının nasıl olacağını belirtir.</td></tr>
+                  <tr>
+                    <td>&lt;legend&gt;</td>
+                    <td>Manşet</td></tr>
+                  <tr>
+                    <td>&lt;select&gt;</td>
+                    <td>Açılabilir liste (combobox)</td></tr>
+                  <tr>
+                    <td>&lt;optgroup&gt;</td>
+                    <td>Seçenek kutusu grubu</td></tr>
+                  <tr>
+                    <td>&lt;option&gt;</td>
+                    <td>Açılabilir liste içindeki maddeleri belirtir.</td></tr>
+                  <tr>
+                    <td>&lt;button&gt;</td>
+                    <td>Buton</td></tr>
+                  <tr>
+                    <td>&lt;isindex&gt;</td>
+                    <td class="deprecated">Önemsiz. Bunun yerine &lt;input&gt; 
+                      etiketini kullanınız.</td></tr></tbody></table><br>
+                
+    
+    
+                            </td>
+</body>
+</html>

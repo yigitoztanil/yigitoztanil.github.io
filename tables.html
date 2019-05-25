@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablolar</title>
+</head>
+<body>
+    <h2>Tablolar</h2>
+        <td>
+                <hr>
+    
+                <p class="intro">HTML ile tablolar oluşturabilirsiniz.</p>
+                
+    
+                <h2>Tablolar</h2>
+                <p>Tablolar &lt;table&gt; etiketi ile belirtilir. Bir tablo &lt;tr&gt; etiketi 
+                satırlara bölünür ve her satır da &lt;td&gt; etiketi ile sütunlara 
+                bölünür. &lt;td&gt; etiketinin anlamı "table data"dır. Bir veri hücresi 
+                (data cell) metinler, resimler, listeler, paragraflar, formlar, 
+                yatay çizgiler, tablolar vs. içerebilir.</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;table border="1"&gt;
+    &lt;tr&gt;
+    &lt;td&gt;satır 1, hücre 1&lt;/td&gt;
+    &lt;td&gt;satır 1, hücre 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;satır 2, hücre 1&lt;/td&gt;
+    &lt;td&gt;satır 2, hücre 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;</pre></td></tr></tbody></table>
+                <p>Çıktısı aşağıdaki gibi olacaktır:</p>
+                <table border="1">
+                  <tbody>
+                  <tr>
+                    <td>satır 1, hücre 1</td>
+                    <td>satır 1, hücre 2</td></tr>
+                  <tr>
+                    <td>satır 2, hücre 1</td>
+                    <td>satır 2, hücre 2</td></tr></tbody></table><br>
+                <hr>
+    
+                <h2>Tablolar ve Kenarlık (border) Parametresi</h2>
+                <p>Eğer bir border parametresi belirtmezseniz, tablonuz kenarlık 
+                olmadan görüntülenir. Bu bazen yararlı olabilir ama çoğu zaman 
+                kenarlıkları göstermek daha çok işinize yarayacaktır. </p>
+                <p>Kenarlıkları göstermek için aşağıdaki parametreyi 
+                kullanmalısınız:</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;table border="1"&gt;
+    &lt;tr&gt;
+    &lt;td&gt;Satır 1, Hücre 1&lt;/td&gt;
+    &lt;td&gt;Satır 1, Hücre 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;</pre></td></tr></tbody></table><br>
+                <hr>
+    <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- iframe -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7080431382426535" data-ad-slot="6356193643" data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>  <hr>
+                <h2>Tablolarda Başlıklar</h2>
+                <p>Başlıklar &lt;th&gt; etiketi ile belirtilir.</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;table border="1"&gt;
+    &lt;tr&gt;
+    &lt;th&gt;Başlık&lt;/th&gt;
+    &lt;th&gt;Başka Başlık&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;Satır 1, Hücre 1&lt;/td&gt;
+    &lt;td&gt;Satır 1, Hücre 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;Satır 2, Hücre 1&lt;/td&gt;
+    &lt;td&gt;Satır 2, Hücre 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;</pre></td></tr></tbody></table>
+                <p>Çıktısı:</p>
+                <table border="1">
+                  <tbody>
+                  <tr>
+                    <th>Başlık</th>
+                    <th>Başka Başlık</th></tr>
+                  <tr>
+                    <td>Satır 1, Hücre 1</td>
+                    <td>Satır 1, Hücre 2</td></tr>
+                  <tr>
+                    <td>Satır 2, Hücre 1</td>
+                    <td>Satır 2, Hücre 2</td></tr></tbody></table><br>
+                <hr>
+    
+                <h2>Bir Tabloda Boş Hücreler</h2>
+                <p>Veri içermeyen hücreler bir çok tarayıcıda görüntülenmezler.</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;table border="1"&gt;
+    &lt;tr&gt;
+    &lt;td&gt;Satır 1, Hücre 1&lt;/td&gt;
+    &lt;td&gt;Satır 1, Hücre 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;Satır 2, Hücre 1&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;</pre></td></tr></tbody></table>
+                <p>Çıktısı:</p>
+                <table border="1">
+                  <tbody>
+                  <tr>
+                    <td>Satır 1, Hücre 1</td>
+                    <td>Satır 1, Hücre 2</td></tr>
+                  <tr>
+                    <td>Satır 2, Hücre 1</td>
+                    <td></td></tr></tbody></table>
+                <p>Boş hücre etrafındaki iç kenarlıkların görünmediğine dikkat edin. 
+                (Mozilla Firefox bunu görüntüler).</p>
+                <p>Bundan kurtulmak için, (&amp;nbsp;) özel karakterlerini boş hücre 
+                içine ekleyerek kenarlıkların görüntülenmesini sağlayabilirsiniz.</p>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <td><pre>&lt;table border="1"&gt;
+    &lt;tr&gt;
+    &lt;td&gt;Satır 1, Hücre 1&lt;/td&gt;
+    &lt;td&gt;Satır 1, Hücre 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;Satır 2, Hücre 1&lt;/td&gt;
+    &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;</pre></td></tr></tbody></table>
+                <p>Çıktısı:</p>
+                <table border="1">
+                  <tbody>
+                  <tr>
+                    <td>Satır 1, Hücre 1</td>
+                    <td>Satır 1, Hücre 2</td></tr>
+                  <tr>
+                    <td>Satır 2, Hücre 1</td>
+                    <td>&nbsp;</td></tr></tbody></table>
+                <br><hr>
+    
+                <h2>Tablo Etiketleri</h2>
+                <table class="ex" width="100%" cellspacing="0" border="1">
+                  <tbody>
+                  <tr>
+                    <th align="left">Etiketi</th>
+                    <th align="left">Açıklama</th></tr>
+                  <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Tablo</td></tr>
+                  <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Tablo başlığı</td></tr>
+                  <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Satır</td></tr>
+                  <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Hücre</td></tr>
+                  <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Manşet</td></tr>
+                  <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Hücre grupları</td></tr>
+                  <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Sütun genişliği</td></tr>
+                  <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Tablo başı</td></tr>
+                  <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Tablo body özelliği</td></tr>
+                  <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Tablonun en alt kısmı</td></tr></tbody></table><br>
+               
+    
+    
+                            </td>
+</body>
+</html>
