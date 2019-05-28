@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hemen HTML Öğren</title>
+</head>
+<body>
+
+<div id="menu">
+    <center><div style="color:rgb(81, 255, 81);margin-top: 5px;margin-bottom: 5px;">Menü</div></center>
+  <a class="menubtn active" href="#intro">Başlangıç</a> 
+  <a class="menubtn" href="#tags">Etiketler</a>
+  <a class="menubtn" href="#format">Biçimlendirme</a>
+  <a class="menubtn" href="#links">Bağlantılar</a>
+  <a class="menubtn" href="#tables">Tablolar</a>
+  <a class="menubtn" href="#forms">Form</a>
+</div>
+
+<div id="content" style="margin-left:25%;padding:1px 16px;height:1000px;">
+   <h1>Hemen HTML Öğren</h1><br>
+   Yiğit Öztanıl
+</div>
+
+</body>
+
+
+<script>
+var header = document.getElementById("menu");
+var btns = header.getElementsByClassName("menubtn");
+//var pages = ["index.html","news.html"];
+for (var i = 0; i < btns.length; i++) {
+    
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+
+  //document.getElementById("optin_settings_dialog").src = current[0].getAttribute('href').slice(1) + ".html";
+  //jquery
+  
+  $('#content').load(current[0].getAttribute('href').slice(1) + ".html");
+  });
+}
+
+</script>
+</html>
